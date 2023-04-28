@@ -1,0 +1,40 @@
+/* NAVIGATION */
+
+body {
+    background-color: white; 
+    font-size: large;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    background-color: bisque; 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+.current-page {
+    font-weight: bolder;
+    color: white; 
+    transition: all 0.5s ease-in;
+    padding: 40px 50px;
+}
