@@ -6,8 +6,6 @@ body {
     font-size: large;
 }
 
-
-
 ul {
     list-style: none;
 }
@@ -22,24 +20,37 @@ nav a {
 }
 
 .everything-else {
-    color: gray;
+    color: white; 
 }
 
 nav li {
     display: inline-block;
-    background-color: bisque;
     padding: 8px 16px;
     border-radius: 8px;
     text-decoration: none;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
 
 }
 
 .current-page {
-    transition-property: font-weight, padding, color;
+    transition-property: padding;
     transition-duration: 1s;
-    font-weight: bolder;
-    color: black;
+    font-weight:bolder; 
+    font-size: larger;
+    color: white; 
     padding: 40px 50px;
+}
+
+.color-switcher 
+{
+    background-color: white; 
+}
+
+.color-switcher a
+{
+    color: #001B3B;
 }
 
 
@@ -47,12 +58,12 @@ nav li {
 
 .home-me {
     display: flex;
-    justify-content:space-around; 
+    justify-content: space-between;
     align-items: center;
-
+    
 }
 .home-me > div {
-    flex: 1;
+    flex: 1 1 0; 
 }
 
 .home-me p {
@@ -60,25 +71,25 @@ nav li {
     color: #001B3B;
     margin: 0;
     display: inline-block;
-    background-color: bisque; 
-    padding: 80px 50px 80px 50px; 
+    background-color: white; 
+    padding: 50px 20px 50px 20px; 
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 9px;
     font-weight: bold;
     margin-left: 100px;
-    
+   
 }
 
 .home-me img {
-    padding-left: 150px;
+    padding-left: 100px;
     max-width: 100%;
     height: 700px;
-    border-radius: 20px;
-   
+    
 } 
+
 
 /* MISC */
 
@@ -90,12 +101,12 @@ nav li {
 /* FOOTER */
 
 footer {
-    padding-top: 10px;
+   
     margin-top: 50px;
     border-radius: 18px;
     text-align: center;
     background: #000000;
-    background: linear-gradient(90deg, #ffffff 0%, #FFFF00 25%, #FFFF00 70%, #ffffff);
+    background: linear-gradient(90deg, #ffffff 0%, #FFFF00 10%, #FFFF00 25%, #ffffff);
     border: solid;
     border-color: #ffffff;
     font-weight: bolder;
@@ -104,8 +115,74 @@ footer {
 
 footer p {
     text-align: right;
-    font-size: 20px;
+    font-size: larger;
     text-align: center;
     font-size: small;
     color: rgb(0, 0, 0);
+}
+
+/* PROJECTS PAGE */
+
+.project-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 800px;
+    padding-left: 150px;
+   
+
+}
+
+.image-container img
+{
+    border-radius: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black; 
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    opacity: 1; 
+    flex-basis: calc(33.33% - 20px);
+}
+
+.image-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px; 
+    height: 350px; 
+    background-color:white; 
+    font-weight: bold;
+    font-size: large;
+    text-align: center; 
+    opacity: 0; 
+    line-height: 1.2;
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect */
+    border-radius: 20px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically and horizontally */
+    border-width: 10px;
+    border-style: solid;
+    border-color: lightgoldenrodyellow; 
+}
+
+.image-text p
+{
+    color: #001B3B;
+}
+
+/* Hover styles */
+.image-container:hover img {
+    opacity: 0; /* Hide the image */
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect */
+}
+
+.image-container:hover .image-text {
+    opacity: 1; 
 }
