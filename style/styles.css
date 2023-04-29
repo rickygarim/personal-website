@@ -32,6 +32,12 @@ nav li {
     border-width: 3px;
 }
 
+nav li:hover
+{
+    transform: translateY(-4px);
+    transition: all 0.2s ease;
+}
+
 .current-page {
     transition-property: padding;
     -webkit-transition: padding 1s; /* Safari */
@@ -49,6 +55,11 @@ nav li {
 .color-switcher a {
     color: #001B3B;
 }
+
+a:focus {
+    color: red;
+  }
+  
 
 
 /* HOME PAGE CONTENT STYLING */
