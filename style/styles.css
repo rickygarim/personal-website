@@ -5,6 +5,15 @@ body {
     font-size: large;
 }
 
+h1
+{
+    text-align: center;
+    padding-top: 100px;  
+    padding-left: 70px; 
+    color: white;
+    font-size: 40px; 
+}
+
 ul {
     list-style: none;
 }
@@ -172,7 +181,7 @@ footer p {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    border: 10px solid lightgoldenrodyellow;
+    border: 10px solid red; 
     -webkit-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out; 
 }
@@ -192,3 +201,37 @@ footer p {
     opacity: 1;
 }
 
+/* TYPING EFFECT */
+
+.typing {
+    height: 200px;
+    padding-left: 90px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-effect {
+    width: 22ch;
+    animation: typing 2.5s steps(30), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
