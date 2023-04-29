@@ -5,11 +5,11 @@ navLinks.forEach(link => {
     const currentLink = document.querySelector('.current-page');
     const colorSwitcherLink = document.querySelector('.color-switcher a');
 
-    if (currentLink !== null) {
+    if (currentLink) {
       currentLink.classList.remove('current-page');
     }
 
-    if (colorSwitcherLink !== null) {
+    if (colorSwitcherLink) {
       colorSwitcherLink.classList.remove('everything-else');
       colorSwitcherLink.closest('li').classList.remove('color-switcher');
     }
