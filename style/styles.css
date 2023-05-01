@@ -14,10 +14,9 @@ h1 {
 }
 
 nav {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 70px;
-    background-color: darkslategrey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:  rgba(243, 65, 0, 0.636); 
 }
 
 ul {
@@ -50,8 +49,9 @@ nav li {
 }
 
 nav li:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     transition: all 0.2s ease;
+    box-shadow: 0 4px 4px white; 
 }
 
 .current-page {
