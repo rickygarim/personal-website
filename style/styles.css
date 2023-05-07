@@ -16,7 +16,7 @@ h1 {
 nav {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color:  rgba(243, 65, 0, 0.636); 
+    background-color:  rgba(255, 255, 0, 0.635); 
 }
 
 ul {
@@ -134,9 +134,9 @@ footer {
     border-radius: 18px;
     text-align: center;
     background: #000000;
-    background: linear-gradient(90deg, #ffffff 0%, #FFFF00 10%, #FFFF00 25%, #ffffff);
-    border: solid;
-    border-color: #ffffff;
+    background: rgba(140, 140, 227, 0.684); 
+    border: none; 
+    
     font-weight: bolder;
     font-size: larger;
 }
