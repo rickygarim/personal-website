@@ -42,15 +42,18 @@ function getRandomColor() {
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
+
+  if (color === "#FFFFFF" || color === "#283647")
+  {
+    return getRandomColor(); 
+  }
+  
   return color;
 }
 
 skillItems.forEach(item => {
-  const randomColor = getRandomColor();
-  item.style.backgroundColor = randomColor;
-  item.style.color = '#fff';
+  item.style.backgroundColor = getRandomColor();
 });
 
 
-// document.body.style.zoom = "88%";
 
