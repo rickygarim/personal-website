@@ -52,5 +52,5 @@ skillItems.forEach(item => {
 });
 
 
-
+// document.body.style.zoom = "88%";
 

@@ -353,7 +353,7 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 600px; 
 }
 
 .skills li {
@@ -379,7 +379,8 @@ footer p {
 {
     border: 3px solid white;
     border-radius: 20px;
-    margin-right: 100px;
+    margin-right: 30px; 
+    background-color:  #283647;
 }
 
 /* Socials */
