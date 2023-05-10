@@ -49,9 +49,10 @@ nav li {
 }
 
 nav li:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     transition: all 0.2s ease;
-    box-shadow: 0 4px 4px white;
+    background-color: rgba(238, 238, 108, 0.287);
+
 }
 
 .current-page {
@@ -371,7 +372,7 @@ footer p {
 
 
 .skills li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
